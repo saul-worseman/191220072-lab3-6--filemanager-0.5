@@ -1,9 +1,10 @@
 package com.michaldabski.filemanager;
 
+import android.app.Activity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class SampleActivity extends AppCompatActivity {
+public class SampleActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

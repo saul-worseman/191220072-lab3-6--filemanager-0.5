@@ -21,13 +21,18 @@ buildscript {
 apply plugin: 'com.android.application'
 
 dependencies {
+    implementation 'com.android.support:appcompat-v7:25.2.1'
+    implementation 'com.android.support.constraint:constraint-layout:2.0.4'
     compile fileTree(include: '*.jar', dir: 'libs')
-    compile 'com.android.support:support-v4:21.0.0'
+    compile 'com.android.support:support-v4:25.0.0'
 }
 
 android {
-    compileSdkVersion 21
-    buildToolsVersion "21.1.1"
+    compileSdkVersion 29
+    buildToolsVersion "29.0.0"
+    defaultConfig{
+        targetSdkVersion 29
+    }
 
     sourceSets {
         main {
