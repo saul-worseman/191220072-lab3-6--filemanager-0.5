@@ -65,6 +65,7 @@ public class AboutActivity extends Activity implements OnClickListener
 		
 		findViewById(R.id.btnFeedback).setOnClickListener(this);
 		findViewById(R.id.btnPlaystore).setOnClickListener(this);
+		findViewById(R.id.button).setOnClickListener(this);
 	}
 	
 	/**
@@ -120,6 +121,18 @@ public class AboutActivity extends Activity implements OnClickListener
 				try
 				{
 					Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(PLAYSTORE_URL));
+					startActivity(intent);
+				}
+				catch (Exception e)
+				{
+					e.printStackTrace();
+				}
+				break;
+
+			case R.id.button:
+				try
+				{
+					Intent intent = new Intent(this, com.michaldabski.filemanager.SampleActivity.class);
 					startActivity(intent);
 				}
 				catch (Exception e)
